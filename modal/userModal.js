@@ -3,7 +3,8 @@ const db = require("./sqlconfig.js");
 let userModal={
     logindo:function(user,pwd,callback){
 
-        let sql = "select * from user where userName =? AND password=?";
+        let sql = "select * from u_user where UserAcount=? AND UserName=?";
+
         db.connect(sql,[user,pwd],callback);
 
     },

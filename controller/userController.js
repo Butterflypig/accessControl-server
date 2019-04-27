@@ -4,9 +4,12 @@ let userConntroll = {
         let user = req.body.txtUserName;
         let pwd = req.body.txtPwdName;
 
+        console.log("账号或密码",user,pwd);
+        
+
        userModal.logindo(user,pwd,function(err,data){
-           console.log(err);
-           console.log(data);
+           console.log("err",err);
+           console.log("data",data);
            if(!err){ //err 为null , 代码正确
                if(data.length>0){
                    res.send("登录成功");

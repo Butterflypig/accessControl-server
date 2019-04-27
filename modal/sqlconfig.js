@@ -6,10 +6,10 @@ let db = {
 
 // 2. 建立连接
         let myconn = mysql.createConnection({
-            host:"localhost",
+            host:"192.168.0.125",
             user:"root",
-            password:"root",
-            database:"project",
+            password:"123456",
+            database:"bjl_acs",
             port:3306
         });
 
